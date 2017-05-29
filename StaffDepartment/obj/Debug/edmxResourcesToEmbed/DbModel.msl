@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище StDbModelContainer" CdmEntityContainer="StDbEntities">
+    <EntitySetMapping Name="Educations">
+      <EntityTypeMapping TypeName="StDbModel.Educations">
+        <MappingFragment StoreEntitySet="Educations">
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+          <ScalarProperty Name="DipNumber" ColumnName="DipNumber" />
+          <ScalarProperty Name="SeriesOfDiplom" ColumnName="SeriesOfDiplom" />
+          <ScalarProperty Name="WId" ColumnName="WId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passports">
+      <EntityTypeMapping TypeName="StDbModel.Passports">
+        <MappingFragment StoreEntitySet="Passports">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PassportType" ColumnName="PassportType" />
+          <ScalarProperty Name="Series" ColumnName="Series" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Gave" ColumnName="Gave" />
+          <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+          <ScalarProperty Name="WorkerID" ColumnName="WorkerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkBooks">
+      <EntityTypeMapping TypeName="StDbModel.WorkBooks">
+        <MappingFragment StoreEntitySet="WorkBooks">
+          <ScalarProperty Name="WorkBookID" ColumnName="WorkBookID" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="StDbModel.Workers">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="WId" ColumnName="WId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="BDate" ColumnName="BDate" />
+          <ScalarProperty Name="BCountry" ColumnName="BCountry" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="WorkBookID" ColumnName="WorkBookID" />
+          <ScalarProperty Name="BTown" ColumnName="BTown" />
+          <ScalarProperty Name="Addr" ColumnName="Addr" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkPlaces">
+      <EntityTypeMapping TypeName="StDbModel.WorkPlaces">
+        <MappingFragment StoreEntitySet="WorkPlaces">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="WokrBookID" ColumnName="WokrBookID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ReasonForLeaving" ColumnName="ReasonForLeaving" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

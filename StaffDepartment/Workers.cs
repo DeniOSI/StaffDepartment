@@ -32,6 +32,8 @@ namespace StaffDepartment
         public string Nationality { get; set; }
         public int WorkBookID { get; set; }
         public string BTown { get; set; }
+        public string Addr { get; set; }
+        public byte[] Photo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Educations> Educations { get; set; }

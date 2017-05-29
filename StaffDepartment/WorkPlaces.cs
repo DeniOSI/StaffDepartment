@@ -19,6 +19,8 @@ namespace StaffDepartment
         public System.DateTime BeginDate { get; set; }
         public System.DateTime FinishDate { get; set; }
         public int WokrBookID { get; set; }
+        public string CompanyName { get; set; }
+        public string ReasonForLeaving { get; set; }
     
         public virtual WorkBooks WorkBooks { get; set; }
     }

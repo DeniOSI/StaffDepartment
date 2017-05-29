@@ -21,7 +21,6 @@ namespace StaffDepartment
         public string Gave { get; set; }
         public System.DateTime DateOfIssue { get; set; }
         public int WorkerID { get; set; }
-        public Nullable<int> Worker_WId { get; set; }
     
         public virtual Workers Workers { get; set; }
     }

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="StaffDepartment.Controllers.AddUserController">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\AddUserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.CorectController">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAIAgAgAIAEAAAEAAAAEAAgICAYE=</HashCode>
+      <FileName>Controllers\CorectController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.DeleteController">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\DeleteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.FindController">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\FindController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.HomeController">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.PrintController">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\PrintController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.UpdController">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UpdController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaffDepartment.Controllers.WInfoController">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAgQAACAAAgAAAAAAAAAAIIAgQA=</HashCode>
+      <FileName>Controllers\WInfoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Web.Mvc.Controller" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
