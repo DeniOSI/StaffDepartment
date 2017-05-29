@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Print";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@Styles.Render("~/Content/Site.css")
+<div >
+    <div class="text-right">
+        @using (Html.BeginForm("Find",  "Find", FormMethod.Post))
+        {
+            @Html.TextBox("findStr")
+            <input type="submit" value="Искать" />
+        }
+    </div>
+    <h2>Информация о работниках</h2>
+ 
+        <table class=" text-center">
+            <tr class="text-center">
+                <th><p>Имя</p></th>
+                <th><p>Фамилия</p></th>
+                <th><p>Отчество</p></th>
+                <th><p>ИНН</p></th>
+                <th><p>Действия</p></th>
+
+            </tr>
+            @foreach (var w in ViewBag.Workers)
+            {
+                <tr>
+                    <td>
+                        <p>@w.Name</p>
+                    </td>
+                    <td>
+                        <p>@w.LastName</p>
+                    </td>
+                    <td>
+                        <p>@w.Patronymic</p>
+                    </td>
+
+                    <td>
+                        <p>@w.INN</p>
+                    </td>
+                    @*@Html.ActionLink(" Детальная информация", "Uinfo", "WInfo", new { Id = @w.WId }, null)*@
+
+                    <td class="text-left">
+
+                      <div class="glyphicon glyphicon-eye-open"> @Html.ActionLink("Детально", "Uinfo", "WInfo", new { Id = @w.WId }, null) </div> |
+                      
+                            <div class="glyphicon glyphicon-remove-sign">@Html.ActionLink("Удалить", "Index", "Delete", new { Id = @w.WId }, null)</div>
+                        
+
+
+
+                    </td>
+                </tr>
+            }
+        </table>
+ 
+</div>

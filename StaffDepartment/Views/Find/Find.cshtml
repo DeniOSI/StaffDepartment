@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Finds";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Найденно</h2>
+<div>
+    <table>
+        <tr>
+            <th><p>Имя</p></th>
+            <th><p>Фамилия</p></th>
+           <th><p>Действие</p></th>
+        </tr>
+       
+        @if (ViewBag.Finds != null)
+        {
+
+        foreach (var item in ViewBag.Finds)
+        {
+            <tr>
+                <td>
+                    <p>@item.Name</p>
+                </td>
+                <td>
+                    <p>@item.LastName </p>
+                </td>
+                <td>
+                    <p> <a href="/WInfo/Uinfo/@item.WId">Детальная информация</a></p>
+                </td>
+            </tr>
+        }
+        }
+    </table>
+
+</div>
+

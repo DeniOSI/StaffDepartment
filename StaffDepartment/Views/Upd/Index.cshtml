@@ -1,0 +1,347 @@
+﻿@model StaffDepartment.Models.Worker
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Изменить</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <table cellpadding="3" cellspacing="3">
+            <tr>
+                <td colspan="2">
+                    <div class="text-center">  <h1>Редактирование записи</h1> </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+
+                    <div class="text-center">  <h3> Основаня информация</h3></div>
+                    <div class="col-lg-12">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Name)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Name)
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.DisplayNameFor(model => model.LastName)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.LastName)
+                            @Html.ValidationMessageFor(model => model.LastName)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.DisplayNameFor(model => model.Patronymic)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Patronymic)
+                            @Html.ValidationMessageFor(model => model.Patronymic)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Addr)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Addr)
+                            @Html.ValidationMessageFor(model => model.Addr)
+                        </div>
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.INN)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.INN)
+                            @Html.ValidationMessageFor(model => model.INN)
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.BDate)
+                        </div>
+                        <div class="editor-field">
+                            <input type="date" name="BDate" id="BDate" value=model.BDate />
+
+                        </div>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Nationality)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.Nationality)
+                            @Html.ValidationMessageFor(model => model.Nationality)
+                        </div>
+                    </div>
+
+
+                </td> @*add general information about worker*@
+
+                <td>
+                    <div class="col-lg-12">
+                        <h3>Трудовая книжка</h3>
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.WorkBook.BeginDate)
+                            <br />
+                          
+                            @Html.HiddenFor(bd=>bd.WorkBook.BeginDate, "@Model.WorkBook.BeginDate")
+                            
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => model.WorkBook.BeginDate)
+                        </div>
+                    </div>
+                    <div id="educationBlock">
+
+                        @*Education*@
+
+                        <h4>Образование №1</h4>
+
+                        @*College name*@
+                       @foreach (var item in @Model.Educations)
+                       {
+
+                      
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => item.CollegeName)
+                            @Html.ValidationMessageFor(model => item.CollegeName)
+                        </div>
+                        @*Diplom Number*@
+                        <div class="editor-label">
+                            @Html.LabelFor(model => item.DipNumber)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => item.DipNumber)
+                            @Html.ValidationMessageFor(model => item.DipNumber)
+                        </div>
+                        @*Diplom series*@
+                        <div class="editor-label">
+                            @Html.LabelFor(model => item.SeriesOfDiplom)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => item.SeriesOfDiplom)
+                            @Html.ValidationMessageFor(model => item.SeriesOfDiplom)
+                        </div>
+
+                        @*Diplom speciality*@
+
+                        <div class="editor-label">
+                            @Html.LabelFor(model => item.Speciality)
+                        </div>
+                        <div class="editor-field">
+                            @Html.EditorFor(model => item.Speciality)
+                            @Html.ValidationMessageFor(model => item.Speciality)
+                        </div>
+                       }
+                    </div>
+                    <br />
+                    <input type="button" class="addLink" name="name" value="Информация о образовании" />
+
+                </td> @*work book and college*@
+            </tr>
+            <tr>
+                <td>
+
+                    <h3>Паспорт</h3>
+               @*@if (Model.Passports.Count < 1)
+               {
+                <div class="editor-label">
+                @Html.LabelFor(model => model.Passports.ElementAt(0).Number )
+                </div>
+                    <div class="editor-field">
+
+                        <input type="text" name="@Model.Passports.ElementAt(0).Number" value="" />
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Passports.ElementAt(0).Series)
+                    </div>
+                    <div class="editor-field">
+                        <input type="text" name="@Model.Passports.ElementAt(0).Series" value="" />
+                        @Html.ValidationMessageFor(model => model.Passports.ElementAt(0).Series)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Passports.ElementAt(0).Gave)
+                    </div>
+                    <div class="editor-field">
+                        <input type="text" name="@Model.Passports.ElementAt(0).Gave" id="PassportGave" value=@Model.Passports.ElementAt(0).Gave  />
+                        @Html.ValidationMessageFor(model => model.Passports.ElementAt(0).Gave)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => model.Passports.ElementAt(0).DateOfIssue)
+                    </div>
+                    <div class="editor-field">
+                        <input type="date" name="DateOfIssue" id="DateOfIssue" value=@Model.Passports.ElementAt(0).DateOfIssue />
+                    </div>
+               }
+               else
+               {*@
+              @foreach (var item in Model.Passports)
+                {
+                    
+                    <div class="editor-label">
+                        @Html.LabelFor(model => item.Number)
+                    </div>
+                    <div class="editor-field">
+
+                        @Html.EditorFor(model => item.Number)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => item.Series)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => item.Series)
+                        @Html.ValidationMessageFor(model => item.Series)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => item.Gave)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => item.Gave)
+                        @Html.ValidationMessageFor(model => item.Gave)
+                    </div>
+
+                    <div class="editor-label">
+                        @Html.LabelFor(model => item.DateOfIssue)
+                    </div>
+                    <div class="editor-field">
+                        @Html.EditorFor(model => item.DateOfIssue)
+                    </div>
+                }
+          
+                </td>@*Information about passport*@
+                <td>
+    <div id="workPlaceBlock">
+        <h3>Предыдущие места роботы</h3>
+        @foreach (var item in Model.WorkBook.WorkPlacess)
+        {
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => item.Position)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item.Position)
+            @Html.ValidationMessageFor(model => item.Position)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => item.CompanyName)
+        </div>
+        <div>
+        @Html.EditorFor(model => item.CompanyName)
+            @Html.ValidationMessageFor(model => item.CompanyName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => item.BeginDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item.BeginDate)
+          
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => item.FinishDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => item.FinishDate)
+            
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => item.ReasonForLeaving)
+        </div>
+       
+        <div class="editor-field">
+            @Html.EditorFor(model => item.ReasonForLeaving)
+            @Html.ValidationMessageFor(model => item.ReasonForLeaving)
+        </div>
+        }
+    </div>
+    <br />
+
+    <input type="button" class="addWorkPlace" name="addWorkPlace" value="добавить место работы" />
+                
+                </td> @*work places*@
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <input type="submit" value="Добавить" />
+                    </p>
+                </td> @*submit*@
+            </tr>
+        </table>
+    </fieldset>
+
+
+    @section Scripts {
+        <script>
+                $(function () {
+                    var i = 0;
+                    $('.addWorkPlace').click(function () {
+                        i++;
+                        var html2Add = "<h4> Запись №" + (i + 1) + "</h4>" +
+                            "<div class='editor-label'> Должность </div>" +
+                            "<div class='editor-field'>" + "<input type='text' name='WorkPlaPosition[" + i + "]'" +
+                            "id='WorkPlaPosition'/>" +
+                            "</div>" +
+                            "<div class='editor-label'> Адресс и название места роботы </div>" +
+                            "<div class='editor-field'>" + "<input type='text' name='WorkPlaceCompanyName[" + i + "]'" +
+                            "id='WorkPlaceCompanyName'/>" +
+                            "</div>" +
+                            "<div class='editor-label'> Дата начала работа </div>" +
+                            "<div class='editor-field'>" + "<input type='date' name='WorkPlaceBegin[" + i + "]'" +
+                            "id='WorkPlaceBegin'/>" +
+                            "</div>" +
+                            "<div class='editor-label'> Дата увольнения </div>" +
+                            "<div class='editor-field'>" + "<input type='date' name='WorkPlaceFinish[" + i + "]'" +
+                            "id='WorkPlaceFinish'/>" +
+                            "<div class='editor-label'> Причина увольнения </div>" +
+                            "<div class='editor-field'>" + "<input type='text' name='WorkPlaceReasonForLeaving[" + i + "]'" +
+                            "id='WorkPlaceReasonForLeaving'/>" +
+                            "</div>";
+
+                        $('#workPlaceBlock').append(html2Add);
+                    })
+                })
+
+                $(function () {
+                var i = 0;
+                $('.addLink').click(function () {
+                    i++;
+                    var html2Add = "<h4> Запись №" + (i + 1) + "</h4>" +
+                        "<div class='editor-label'> Учебное завидение </div>" +
+                        "<div class='editor-field'>" + "<input type='text' name='EducationCollegeName[" + i + "]'" +
+                        "id='EducationCollegeName'/>" +
+                        "</div>" +
+                        "<div class='editor-label'> Номер диплома </div>" +
+                        "<div class='editor-field'>" + "<input type='text' name='EducationDipNumber[" + i + "]'" +
+                        "id='EducationDipNumber'/>" +
+                        "</div>" +
+                        "<div class='editor-label'> Серия диплома </div>" +
+                        "<div class='editor-field'>" + "<input type='text' name='EducationSeriesOfDiplom[" + i + "]'" +
+                        "id='EducationSeriesOfDiplom'/>" +
+                        "</div>" +
+                        "<div class='editor-label'> Специальность </div>" +
+                        "<div class='editor-field'>" + "<input type='text' name='EducationSpeciality[" + i + "]'" +
+                        "id='EducationSpeciality'/>" +
+                        "</div>";
+
+                        $('#educationBlock').append(html2Add);
+                })
+            })
+        </script>
+    }
+
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="148c94afc1a542e5ae3e3a200238a932" Name="Diagram1">
+        <EntityTypeShape EntityType="StDbModel.Educations" Width="1.5" PointX="4.375" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StDbModel.Passports" Width="1.5" PointX="6.875" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StDbModel.WorkBooks" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StDbModel.Workers" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StDbModel.WorkPlaces" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="StDbModel.FK_dbo_Educations_dbo_Workers_WId" ManuallyRouted="false" />
+        <AssociationConnector Association="StDbModel.FK_dbo_Passports_dbo_Workers_Worker_WId" ManuallyRouted="false" />
+        <AssociationConnector Association="StDbModel.FK_dbo_WorkBooks_dbo_Workers_WorkBookID" ManuallyRouted="false" />
+        <AssociationConnector Association="StDbModel.FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

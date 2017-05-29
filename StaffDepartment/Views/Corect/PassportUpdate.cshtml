@@ -1,0 +1,73 @@
+﻿@model IEnumerable<StaffDepartment.Models.Passport>
+    @using System.Threading;
+
+@{
+    ViewBag.Title = "PassportUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Обновление данных о паспорте</h2>
+
+<p>
+    <span class="btn btn-default"> @Html.ActionLink("Создать", "AddPassport", "Corect", new { id = ViewBag.wid }, null) </span>
+</p>
+@if(ViewBag.mesaga != "")
+{
+    <p>@ViewBag.mesage</p>
+    Thread.Sleep(4000); 
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Series)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gave)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfIssue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkerID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Series)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gave)
+        </td>
+        <td>
+            @item.DateOfIssue.ToString("d")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkerID)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "EditRecordPassportAsync", "Corect", new { id=item.Id }, null) |
+            @Html.ActionLink("Удалить", "DeletePassport", "Corect", new { id=item.Id }, null)
+        </td>
+    </tr>
+}
+
+</table>
+<div class="form-actions no-color">
+    
+    @Html.ActionLink("Вернуться", "Uinfo", "WInfo", new { id = ViewBag.wid }, null)
+</div>

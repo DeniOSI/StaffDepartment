@@ -1,0 +1,85 @@
+﻿
+@model StaffDepartment.Models.Worker
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12 text-center"><h2>Детали записи</h2></div>
+<div class="container">
+    <div class="col-md-6 ">
+
+   
+      
+
+            
+                <h4>Работник</h4>
+                <hr />
+              
+                @Html.HiddenFor(model => model.WId)
+
+                <table class="table" >
+                    <tr>
+                        <th>Имя</th>
+                        <td>@Model.Name</td>
+                    </tr>
+                    <tr>
+                        <th>Фамилия</th>
+                        <td>@Model.LastName</td>
+                    </tr>
+                    <tr>
+                        <th>Отчество</th>
+                        <td>@Model.Patronymic</td>
+                    </tr>
+
+                    <tr>
+                        <th>Адрес проживания</th>
+                        <td>@Model.Addr</td>
+                    </tr>
+                    <tr>
+                        <th>Идентификационный код</th>
+                        <td>@Model.INN</td>
+                    </tr>
+                    <tr>
+                        <th>Дата регистрации</th>
+                        <td>@Model.Date</td>
+                    </tr>
+                    <tr>
+                        <th>Дата рождения</th>
+                        <td>@Model.BDate</td>
+                    </tr>
+                    <tr>
+                        <th>Национальность</th>
+                        <td>@Model.Nationality</td>
+                    </tr>
+                    <tr>
+                        <th>Место рождения</th>
+                        <td>@Model.BCountry</td>
+                    </tr>
+                </table>
+
+
+  
+
+    </div>
+        
+   
+    <div class="col-md-6 text-center">
+        <br />
+        <br />
+        <br />
+        @if (Model.Photo != null)
+        {
+            @Html.Raw("<img style='width: 300px; ' src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(Model.Photo) + "\" />")
+        }
+        else
+        {
+            <h2>Фото отсутствует</h2>
+        }
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Вернуться", "Uinfo", "WInfo", new { id = Model.WId }, null)
+</div>

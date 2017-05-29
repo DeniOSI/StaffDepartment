@@ -1,0 +1,249 @@
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ApplicationInsights.config
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\csc.exe
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\csc.exe.config
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\csc.rsp
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\csi.exe
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\csi.rsp
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.AppContext.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.Collections.Immutable.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.IO.FileSystem.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\vbc.exe
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\vbc.exe.config
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\vbc.rsp
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\VBCSCompiler.exe
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\roslyn\VBCSCompiler.exe.config
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\StaffDepartment.dll.config
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\StaffDepartment.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\StaffDepartment.pdb
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Antlr3.Runtime.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\EntityFramework.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\EntityFramework.SqlServer.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Web.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.WindowsServer.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.ApplicationInsights.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.Web.Infrastructure.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Newtonsoft.Json.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Helpers.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Mvc.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Optimization.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Razor.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Deployment.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Razor.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\WebGrease.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\EntityFramework.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\EntityFramework.SqlServer.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Helpers.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Mvc.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Optimization.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.Razor.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Deployment.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Razor.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Antlr3.Runtime.pdb
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Newtonsoft.Json.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.ApplicationInsights.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.WindowsServer.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Web.xml
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.Helpers.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.Mvc.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.Optimization.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.Razor.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.csprojResolveAssemblyReference.cache
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.dll
+c:\users\администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.pdb
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ApplicationInsights.config
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\csc.exe
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\csc.exe.config
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\csc.rsp
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\csi.exe
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\csi.rsp
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.AppContext.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.Collections.Immutable.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.IO.FileSystem.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\System.Reflection.Metadata.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\vbc.exe
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\vbc.exe.config
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\vbc.rsp
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\VBCSCompiler.exe
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\roslyn\VBCSCompiler.exe.config
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\StaffDepartment.dll.config
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\StaffDepartment.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\StaffDepartment.pdb
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Antlr3.Runtime.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\EntityFramework.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\EntityFramework.SqlServer.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.DependencyCollector.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Web.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.WindowsServer.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.ApplicationInsights.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.Web.Infrastructure.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Newtonsoft.Json.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Helpers.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Mvc.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Optimization.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Razor.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Deployment.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Razor.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\WebGrease.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\EntityFramework.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\EntityFramework.SqlServer.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Helpers.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Mvc.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Optimization.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.Razor.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Deployment.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\System.Web.WebPages.Razor.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Antlr3.Runtime.pdb
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Newtonsoft.Json.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.ApplicationInsights.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.DependencyCollector.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.WindowsServer.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\Microsoft.AI.Web.xml
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.Helpers.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.Mvc.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.Optimization.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.Razor.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.Deployment.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\System.Web.WebPages.Razor.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.csprojResolveAssemblyReference.cache
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.pdb
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\bin\ru\EntityFramework.resources.dll
+C:\Users\Администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\bin\ru\EntityFramework.resources.dll
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.Migrations.InitialCreate.resources
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.csproj.GenerateResource.Cache
+G:\Users7\DenOS\Documents\Visual Studio 2017\Projects\Staff\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.Migrations.SampleMigration.resources
+C:\Users\Администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.Migrations.InitialCreate.resources
+C:\Users\Администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.Migrations.SampleMigration.resources
+C:\Users\Администратор\documents\visual studio 2017\Projects\StaffDepartment\StaffDepartment\obj\Debug\StaffDepartment.csproj.GenerateResource.Cache
+E:\StaffRem\StaffDepartment\bin\ApplicationInsights.config
+E:\StaffRem\StaffDepartment\bin\roslyn\csc.exe
+E:\StaffRem\StaffDepartment\bin\roslyn\csc.exe.config
+E:\StaffRem\StaffDepartment\bin\roslyn\csc.rsp
+E:\StaffRem\StaffDepartment\bin\roslyn\csi.exe
+E:\StaffRem\StaffDepartment\bin\roslyn\csi.rsp
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\StaffRem\StaffDepartment\bin\roslyn\System.AppContext.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\System.Collections.Immutable.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\System.IO.FileSystem.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\System.Reflection.Metadata.dll
+E:\StaffRem\StaffDepartment\bin\roslyn\vbc.exe
+E:\StaffRem\StaffDepartment\bin\roslyn\vbc.exe.config
+E:\StaffRem\StaffDepartment\bin\roslyn\vbc.rsp
+E:\StaffRem\StaffDepartment\bin\roslyn\VBCSCompiler.exe
+E:\StaffRem\StaffDepartment\bin\roslyn\VBCSCompiler.exe.config
+E:\StaffRem\StaffDepartment\bin\StaffDepartment.dll.config
+E:\StaffRem\StaffDepartment\bin\StaffDepartment.dll
+E:\StaffRem\StaffDepartment\bin\StaffDepartment.pdb
+E:\StaffRem\StaffDepartment\bin\Antlr3.Runtime.dll
+E:\StaffRem\StaffDepartment\bin\EntityFramework.dll
+E:\StaffRem\StaffDepartment\bin\EntityFramework.SqlServer.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.Agent.Intercept.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.DependencyCollector.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.Web.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.WindowsServer.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.ApplicationInsights.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\StaffRem\StaffDepartment\bin\Microsoft.Web.Infrastructure.dll
+E:\StaffRem\StaffDepartment\bin\Newtonsoft.Json.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.Helpers.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.Mvc.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.Optimization.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.Razor.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.Deployment.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.dll
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.Razor.dll
+E:\StaffRem\StaffDepartment\bin\WebGrease.dll
+E:\StaffRem\StaffDepartment\bin\EntityFramework.xml
+E:\StaffRem\StaffDepartment\bin\EntityFramework.SqlServer.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.Helpers.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.Mvc.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.Optimization.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.Razor.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.Deployment.xml
+E:\StaffRem\StaffDepartment\bin\System.Web.WebPages.Razor.xml
+E:\StaffRem\StaffDepartment\bin\Antlr3.Runtime.pdb
+E:\StaffRem\StaffDepartment\bin\Newtonsoft.Json.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.ApplicationInsights.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.DependencyCollector.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.WindowsServer.xml
+E:\StaffRem\StaffDepartment\bin\Microsoft.AI.Web.xml
+E:\StaffRem\StaffDepartment\bin\ru\EntityFramework.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.Helpers.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.Mvc.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.Optimization.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.Razor.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.WebPages.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\StaffRem\StaffDepartment\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.csprojResolveAssemblyReference.cache
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.Migrations.InitialCreate.resources
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.Migrations.SampleMigration.resources
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.csproj.GenerateResource.Cache
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.dll
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.pdb
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.Migrations.second.resources
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.Migrations.Migration2.resources
+E:\StaffRem\StaffDepartment\obj\Debug\StaffDepartment.Migrations.Migration3.resources

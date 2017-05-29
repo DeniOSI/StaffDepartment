@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Система учета трудовых кадров</h1>
+    <p class="lead">Данная система поможет Вам вести учет трудовых кадров предприятия</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6  text  ">
+        <h2><p><div class="">  @Html.ActionLink("Вывсести информацию о всех работниках", "Print", "Print") </div></p></h2>
+        <p>
+          
+        </p>
+        
+    </div>
+    <div class="col-md-6  text">
+        <h2><p><div class="  ">  @Html.ActionLink("Добавить новго сотрудника", "Add", "AddUser") </div></p></h2>
+        
+       
+    </div>
+    
+</div>

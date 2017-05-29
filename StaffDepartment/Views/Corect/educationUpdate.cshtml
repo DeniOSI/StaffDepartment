@@ -1,0 +1,69 @@
+﻿@model IEnumerable<StaffDepartment.Models.Education>
+
+@{
+    ViewBag.Title = "educationUpdate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Образование</h2>
+
+<p>
+    <span class="btn btn-default"> @Html.ActionLink("Добавить запись", "CreateEducation", "Corect", new { id = ViewBag.wid }, null) </span>
+</p>
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.CollegeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Speciality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DipNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SeriesOfDiplom)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <form action="/Corect/CorrectEducation" method="post">
+            <td>
+                @*<input type="hidden" name=Worker value="@item.Worker" />*@ 
+                <input type="hidden" name=EId value="@item.EId" />               
+                <input type="hidden" name=WId value="@item.WId" />
+              @{ 
+                  int WID = item.WId;
+              }
+                <input type="text" name=CollegeName value="@item.CollegeName" />
+          
+                </td>
+            <td>
+                <input type="text" name=Speciality value="@item.Speciality" />
+                
+            </td>
+            <td>
+                <input type="text" name=DipNumber value="@item.DipNumber" />
+            </td>
+            <td>
+                <input type="text" name=SeriesOfDiplom value="@item.SeriesOfDiplom" />
+            </td>
+            <td>
+                <input type="submit"  value="Сохранить" />
+
+                @Html.ActionLink("Удалить", "DeleteAsync", "Corect", new { id = item.EId }, null)
+            </td>
+        </form>
+    </tr>
+}
+   
+</table>
+<style>
+    #back{color:white; text-decoration-color:white;}
+</style>
+
+@Html.ActionLink("Вернуться", "Uinfo", "WInfo", new { id = ViewBag.wid }, null) 
+

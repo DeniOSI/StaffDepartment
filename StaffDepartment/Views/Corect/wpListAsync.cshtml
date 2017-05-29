@@ -1,0 +1,62 @@
+﻿@model IEnumerable<StaffDepartment.Models.WorkPlace>
+
+@{
+    ViewBag.Title = "Места роботы";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Список мест работы</h2>
+
+<p>
+    @Html.ActionLink("Добавить запись", "AddWP", "Corect", new { id = ViewBag.wid }, null)
+</p>
+<table class="table">
+    <tr>
+      
+        <th>
+            @Html.DisplayNameFor(model => model.Position)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BeginDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinishDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReasonForLeaving)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+            @Html.HiddenFor(modelItem => item.WorkBook.WorkBookID, item.WokrBookID)
+     
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BeginDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinishDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReasonForLeaving)
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "EditWP", "Corect", new { id=item.Id }, null) |
+            @Html.ActionLink("DeleteWP", "Corect", new { id=item.Id })
+        </td>
+    </tr>
+}
+   
+</table>
+@Html.ActionLink("Вернуться", "Uinfo", "WInfo", new { id = ViewBag.wid }, null)

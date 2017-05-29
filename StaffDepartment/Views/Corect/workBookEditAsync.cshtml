@@ -1,0 +1,41 @@
+﻿@model StaffDepartment.Models.WorkBook
+
+@{
+    ViewBag.Title = "workBookEditAsync";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Трудовая книжка</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Редактировать</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.WorkBookID)
+
+        <div class="form-group">
+           @Html.DisplayNameFor(model=>model.BeginDate)
+            <div class="col-md-10">
+                <input type="text" name="BeginDate" value=@Model.BeginDate.ToString("d") />
+                @Html.ValidationMessageFor(model=>model.BeginDate)
+              
+            </div>
+        </div>
+        <input type="hidden" name="RecordID" value="@Model.RecordID" />
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Вернуться", "Uinfo", "WInfo", new { id = ViewBag.wid }, null)
+</div>

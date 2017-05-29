@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище StDbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Educations">
+          <Key>
+            <PropertyRef Name="EId" />
+          </Key>
+          <Property Name="EId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CollegeName" Type="nvarchar(max)" />
+          <Property Name="Speciality" Type="nvarchar(max)" />
+          <Property Name="DipNumber" Type="int" Nullable="false" />
+          <Property Name="SeriesOfDiplom" Type="nvarchar(max)" />
+          <Property Name="WId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Passports">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PassportType" Type="nvarchar(max)" />
+          <Property Name="Series" Type="nvarchar(max)" />
+          <Property Name="Number" Type="int" Nullable="false" />
+          <Property Name="Gave" Type="nvarchar(max)" />
+          <Property Name="DateOfIssue" Type="datetime" Nullable="false" />
+          <Property Name="WorkerID" Type="int" Nullable="false" />
+          <Property Name="Worker_WId" Type="int" />
+        </EntityType>
+        <EntityType Name="WorkBooks">
+          <Key>
+            <PropertyRef Name="WorkBookID" />
+          </Key>
+          <Property Name="WorkBookID" Type="int" Nullable="false" />
+          <Property Name="BeginDate" Type="datetime" Nullable="false" />
+          <Property Name="RecordID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="WId" />
+          </Key>
+          <Property Name="WId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="LastName" Type="nvarchar(max)" />
+          <Property Name="Patronymic" Type="nvarchar(max)" />
+          <Property Name="INN" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="BDate" Type="datetime" Nullable="false" />
+          <Property Name="BCountry" Type="nvarchar(max)" />
+          <Property Name="Nationality" Type="nvarchar(max)" />
+          <Property Name="WorkBookID" Type="int" Nullable="false" />
+          <Property Name="BTown" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="WorkPlaces">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Position" Type="nvarchar(max)" />
+          <Property Name="BeginDate" Type="datetime" Nullable="false" />
+          <Property Name="FinishDate" Type="datetime" Nullable="false" />
+          <Property Name="WokrBookID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_dbo_Educations_dbo_Workers_WId">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Educations" Type="Self.Educations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="Educations">
+              <PropertyRef Name="WId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Passports_dbo_Workers_Worker_WId">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="0..1" />
+          <End Role="Passports" Type="Self.Passports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="Passports">
+              <PropertyRef Name="Worker_WId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_WorkBooks_dbo_Workers_WorkBookID">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1" />
+          <End Role="WorkBooks" Type="Self.WorkBooks" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="WorkBooks">
+              <PropertyRef Name="WorkBookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID">
+          <End Role="WorkBooks" Type="Self.WorkBooks" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="WorkPlaces" Type="Self.WorkPlaces" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WorkBooks">
+              <PropertyRef Name="WorkBookID" />
+            </Principal>
+            <Dependent Role="WorkPlaces">
+              <PropertyRef Name="WokrBookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище StDbModelContainer">
+          <EntitySet Name="Educations" EntityType="Self.Educations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Passports" EntityType="Self.Passports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WorkBooks" EntityType="Self.WorkBooks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Workers" EntityType="Self.Workers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WorkPlaces" EntityType="Self.WorkPlaces" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_Educations_dbo_Workers_WId" Association="Self.FK_dbo_Educations_dbo_Workers_WId">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Educations" EntitySet="Educations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Passports_dbo_Workers_Worker_WId" Association="Self.FK_dbo_Passports_dbo_Workers_Worker_WId">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Passports" EntitySet="Passports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_WorkBooks_dbo_Workers_WorkBookID" Association="Self.FK_dbo_WorkBooks_dbo_Workers_WorkBookID">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="WorkBooks" EntitySet="WorkBooks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID" Association="Self.FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID">
+            <End Role="WorkBooks" EntitySet="WorkBooks" />
+            <End Role="WorkPlaces" EntitySet="WorkPlaces" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Educations">
+          <Key>
+            <PropertyRef Name="EId" />
+          </Key>
+          <Property Name="EId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CollegeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Speciality" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DipNumber" Type="Int32" Nullable="false" />
+          <Property Name="SeriesOfDiplom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Workers" Relationship="Self.FK_dbo_Educations_dbo_Workers_WId" FromRole="Educations" ToRole="Workers" />
+        </EntityType>
+        <EntityType Name="Passports">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PassportType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Series" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Number" Type="Int32" Nullable="false" />
+          <Property Name="Gave" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfIssue" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="WorkerID" Type="Int32" Nullable="false" />
+          <Property Name="Worker_WId" Type="Int32" />
+          <NavigationProperty Name="Workers" Relationship="Self.FK_dbo_Passports_dbo_Workers_Worker_WId" FromRole="Passports" ToRole="Workers" />
+        </EntityType>
+        <EntityType Name="WorkBooks">
+          <Key>
+            <PropertyRef Name="WorkBookID" />
+          </Key>
+          <Property Name="WorkBookID" Type="Int32" Nullable="false" />
+          <Property Name="BeginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RecordID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Workers" Relationship="Self.FK_dbo_WorkBooks_dbo_Workers_WorkBookID" FromRole="WorkBooks" ToRole="Workers" />
+          <NavigationProperty Name="WorkPlaces" Relationship="Self.FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID" FromRole="WorkBooks" ToRole="WorkPlaces" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="WId" />
+          </Key>
+          <Property Name="WId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Patronymic" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="INN" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BCountry" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Nationality" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WorkBookID" Type="Int32" Nullable="false" />
+          <Property Name="BTown" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Educations" Relationship="Self.FK_dbo_Educations_dbo_Workers_WId" FromRole="Workers" ToRole="Educations" />
+          <NavigationProperty Name="Passports" Relationship="Self.FK_dbo_Passports_dbo_Workers_Worker_WId" FromRole="Workers" ToRole="Passports" />
+          <NavigationProperty Name="WorkBooks" Relationship="Self.FK_dbo_WorkBooks_dbo_Workers_WorkBookID" FromRole="Workers" ToRole="WorkBooks" />
+        </EntityType>
+        <EntityType Name="WorkPlaces">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Position" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BeginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FinishDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="WokrBookID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="WorkBooks" Relationship="Self.FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID" FromRole="WorkPlaces" ToRole="WorkBooks" />
+        </EntityType>
+        <Association Name="FK_dbo_Educations_dbo_Workers_WId">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Educations" Type="Self.Educations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="Educations">
+              <PropertyRef Name="WId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Passports_dbo_Workers_Worker_WId">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="0..1" />
+          <End Role="Passports" Type="Self.Passports" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="Passports">
+              <PropertyRef Name="Worker_WId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_WorkBooks_dbo_Workers_WorkBookID">
+          <End Role="Workers" Type="Self.Workers" Multiplicity="1" />
+          <End Role="WorkBooks" Type="Self.WorkBooks" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Workers">
+              <PropertyRef Name="WId" />
+            </Principal>
+            <Dependent Role="WorkBooks">
+              <PropertyRef Name="WorkBookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID">
+          <End Role="WorkBooks" Type="Self.WorkBooks" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="WorkPlaces" Type="Self.WorkPlaces" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="WorkBooks">
+              <PropertyRef Name="WorkBookID" />
+            </Principal>
+            <Dependent Role="WorkPlaces">
+              <PropertyRef Name="WokrBookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="StDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Educations" EntityType="Self.Educations" />
+          <EntitySet Name="Passports" EntityType="Self.Passports" />
+          <EntitySet Name="WorkBooks" EntityType="Self.WorkBooks" />
+          <EntitySet Name="Workers" EntityType="Self.Workers" />
+          <EntitySet Name="WorkPlaces" EntityType="Self.WorkPlaces" />
+          <AssociationSet Name="FK_dbo_Educations_dbo_Workers_WId" Association="Self.FK_dbo_Educations_dbo_Workers_WId">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Educations" EntitySet="Educations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Passports_dbo_Workers_Worker_WId" Association="Self.FK_dbo_Passports_dbo_Workers_Worker_WId">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="Passports" EntitySet="Passports" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_WorkBooks_dbo_Workers_WorkBookID" Association="Self.FK_dbo_WorkBooks_dbo_Workers_WorkBookID">
+            <End Role="Workers" EntitySet="Workers" />
+            <End Role="WorkBooks" EntitySet="WorkBooks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID" Association="Self.FK_dbo_WorkPlaces_dbo_WorkBooks_WokrBookID">
+            <End Role="WorkBooks" EntitySet="WorkBooks" />
+            <End Role="WorkPlaces" EntitySet="WorkPlaces" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище StDbModelContainer" CdmEntityContainer="StDbEntities">
+          <EntitySetMapping Name="Educations">
+            <EntityTypeMapping TypeName="StDbModel.Educations">
+              <MappingFragment StoreEntitySet="Educations">
+                <ScalarProperty Name="EId" ColumnName="EId" />
+                <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+                <ScalarProperty Name="Speciality" ColumnName="Speciality" />
+                <ScalarProperty Name="DipNumber" ColumnName="DipNumber" />
+                <ScalarProperty Name="SeriesOfDiplom" ColumnName="SeriesOfDiplom" />
+                <ScalarProperty Name="WId" ColumnName="WId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Passports">
+            <EntityTypeMapping TypeName="StDbModel.Passports">
+              <MappingFragment StoreEntitySet="Passports">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PassportType" ColumnName="PassportType" />
+                <ScalarProperty Name="Series" ColumnName="Series" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Gave" ColumnName="Gave" />
+                <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+                <ScalarProperty Name="WorkerID" ColumnName="WorkerID" />
+                <ScalarProperty Name="Worker_WId" ColumnName="Worker_WId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkBooks">
+            <EntityTypeMapping TypeName="StDbModel.WorkBooks">
+              <MappingFragment StoreEntitySet="WorkBooks">
+                <ScalarProperty Name="WorkBookID" ColumnName="WorkBookID" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Workers">
+            <EntityTypeMapping TypeName="StDbModel.Workers">
+              <MappingFragment StoreEntitySet="Workers">
+                <ScalarProperty Name="WId" ColumnName="WId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+                <ScalarProperty Name="INN" ColumnName="INN" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="BDate" ColumnName="BDate" />
+                <ScalarProperty Name="BCountry" ColumnName="BCountry" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="WorkBookID" ColumnName="WorkBookID" />
+                <ScalarProperty Name="BTown" ColumnName="BTown" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WorkPlaces">
+            <EntityTypeMapping TypeName="StDbModel.WorkPlaces">
+              <MappingFragment StoreEntitySet="WorkPlaces">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="BeginDate" ColumnName="BeginDate" />
+                <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+                <ScalarProperty Name="WokrBookID" ColumnName="WokrBookID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
